@@ -1,0 +1,14 @@
+[package]
+name = "aws_sdk_design"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+aws-config = {version = "*",features = ["behavior-version-latest"]}
+aws-sdk-sesv2 = {version = "*"}
+aws-sdk-rekognition = "*"
+aws-sdk-s3 ="*"
+aws-credential-types = "1.1.1"
+tokio = {version = "*",features = ["full"]}
